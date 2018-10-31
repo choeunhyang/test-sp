@@ -1,4 +1,4 @@
-package com.bdi.sp;
+package com.test.sp;
 
 import static org.junit.Assert.*;
 
@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class DBTest {
 
 	@Autowired
-	private DataSource ds;
+	private DataSource ds; //DBTEST
 	
 	@Test
 	public void test() {

@@ -1,4 +1,4 @@
-package com.bdi.sp;
+package com.test.sp;
 
 import java.text.DateFormat;
 import java.util.Date;
