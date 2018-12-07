@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.sp.UserTest">
+	<select id="loginUser" resultType="com.test.sp.vo.UserTest" parameterType="com.test.sp.vo.UserTest">
+		select * from usertest_info
+		where id=#{id} and pwd=#{pwd}
+	</select>
+	
+	<select id="selectUserById" resultType="com.test.sp.vo.UserTest" parameterType="com.test.sp.vo.UserTest">
+		select * from usertest_info
+		where id=#{id}
+	</select>
+	<insert id="insertUser" parameterType="com.test.sp.vo.UserTest">
+		insert into usertest_info(id,pwd)
+		values(#{id},#{pwd})
+	</insert>
+</mapper>
